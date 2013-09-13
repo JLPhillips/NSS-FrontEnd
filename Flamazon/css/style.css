@@ -1,0 +1,208 @@
+/* Everything */
+
+footer {
+  clear: both;
+  margin-left: 550px;
+}
+
+body {
+  background-color: #df81e2;
+  font-family: "Cinzel";
+}
+
+#cart {
+  margin-left: 1100px;
+  margin-top: 20px;
+  position: absolute;
+}
+
+/* End Everything */
+
+/* Home Only */
+
+#flamazon_logo1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#flamazon_logo1 {
+  float: left;
+  margin-top: 150px;
+  margin-right: 150px;
+  margin-left: 100px;
+  border: 10px solid black;
+  border-radius: 40px;
+  background-color: white;
+}
+
+#slogan {
+  position: relative;
+  margin-right: 150px;
+  margin-top: 50px;
+  float: right;
+  border: 10px solid black;
+  border-radius: 40px;
+  background-color: white;
+}
+
+#home_nav{
+    list-style:none;
+    clear: both;
+    float: left;
+    float: right;
+    margin-right: 150px;
+    margin-top: 30px;
+    padding:0;
+    text-align:center;
+    background-color: white;
+    border: 10px solid black;
+    font-family: serif;
+    border-radius: 40px;
+}
+
+#home_nav li{
+   display:inline;
+}
+#home_nav a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+}
+/* End Home Only */
+
+/* Everything But Home Page */
+
+#flamazon_logo2 {
+  background-color: white;
+  float: left;
+  border: 5px solid black;
+  border-radius: 40px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+#main_nav {
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    margin-right: 250px;
+}
+#main_nav li{
+    display:inline;
+}
+#main_nav a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+}
+
+#title {
+  clear: both;
+  margin-left: 600px;
+}
+
+iframe {
+  margin-left: 500px;
+  border: 10px solid black;
+}
+
+/* End Everything But Home Page */
+
+/* Product List Only */
+
+
+#detail1 {
+  margin-top: 80px;
+  margin-left: 550px;
+}
+
+#detail1 p{
+  margin-left: 20px;
+  font-size: 30px;
+}
+
+#detail2 {
+  margin-left: 550px;
+}
+
+#detail2 p {
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+#detail3 {
+  margin-left: 550px;
+}
+
+#detail3 p {
+  margin-left: 10px;
+  font-size: 30px;
+}
+/* End Product List Only */
+
+/* Cart Only */
+
+#finalcart {
+margin-left: 180px;
+}
+
+#checkout {
+margin-left: 500px;
+}
+/* End Cart Only */
+
+/* Product Description Only */
+#iframe p {
+  font-size: 40px;
+  margin-left: 520px;
+}
+
+#description h2{
+  display: inline;
+  margin-left: 80px;
+}
+
+#description img {
+margin-left: 40px;
+display: inline;
+}
+
+/* End Product Description*/
+
+/* FAQ Only */
+
+#faq {
+  margin-left: 40px;
+  margin-top: 40px;
+  margin-right: 40px;
+  background-color: white;
+  border: 10px solid black;
+  border-radius: 40px;
+}
+/* End FAQ Only */
+
+/* Contact Only */
+
+#contact {
+  margin: 80px;
+  font-size: 30px;
+  background-color: white;
+  border: 10px solid black;
+  border-radius: 40px;
+}
+
+/* End Contact Only */
+
+/* About Only */
+
+#about {
+  margin: 100px;
+  font-size: 20px;
+  background-color: white;
+  border: 10px solid black;
+  border-radius: 40px;
+}
+
+/* End About Only */
