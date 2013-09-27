@@ -17,7 +17,16 @@ var distance = Math.sqrt(a*a + b*b);
 // OR
 // var distance = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
 
-console.log("Your points are: " + points[0] + points[1] + ".");
-console.log("Side a is :"+ a + " units long.");
-console.log("Side b is :"+ b + " units long.");
-console.log("Your distance between points is: " + distance + " units long.");
+
+
+for(i = 0; i < points.length; i++)
+{
+  console.log('The x point is: ' + points[i].x);
+  console.log('The y point is: ' + points[i].y);
+}
+
+
+// console.log("Your points are: " + points + ".");
+// console.log("Side a is :"+ a + " units long.");
+// console.log("Side b is :"+ b + " units long.");
+// console.log("Your distance between points is: " + distance + " units long.");
