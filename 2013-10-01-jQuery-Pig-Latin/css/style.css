@@ -1,0 +1,44 @@
+body {
+  width: 960px;
+  margin: auto; }
+
+img {
+  position: relative;
+  top: 10px; }
+
+#overall {
+  width: 960px;
+  margin: auto; }
+  #overall #form {
+    margin: auto;
+    width: auto;
+    height: auto;
+    border: 20px solid black;
+    float: left;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background-color: red;
+    -webkit-box-shadow: 2px 2px 10px black;
+    -moz-box-shadow: 2px 2px 10px black;
+    box-shadow: 2px 2px 10px black; }
+    #overall #form #container {
+      margin-top: -10px;
+      padding: 8px; }
+      #overall #form #container input {
+        border: 3px solid black;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px; }
+      #overall #form #container #button {
+        background-color: blue;
+        color: black;
+        -webkit-box-shadow: 2px 2px 5px black;
+        -moz-box-shadow: 2px 2px 5px black;
+        box-shadow: 2px 2px 5px black; }
+      #overall #form #container #button.hover {
+        -webkit-transform: scale(2);
+        -moz-transform: scale(2);
+        -ms-transform: scale(2);
+        -o-transform: scale(2);
+        transform: scale(2); }

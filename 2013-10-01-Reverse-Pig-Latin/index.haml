@@ -1,0 +1,22 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    %meta{charset: 'utf-8'}
+    %title QUnit Template
+    %link{rel: 'stylesheet', href: 'css/normalize.css'}
+    %link{rel: 'stylesheet', href: 'css/style.css'}
+  %body
+    %h1 Piglatinize!
+    %h3 Turn any word into its Pig Latin equivalent!
+    #overall
+      #form
+        #container
+          %input#word{type: "text", placeholder: "Enter Your Word Here!"}
+          %span.sym
+            %img{src: "images/arrow.png", height: "30px", width: "auto"}/
+          %input#result{type: "text", readonly: true}
+          %input#button{type: "button", value: "Igpay Atinlay!"}
+
+    %script{src: 'js/jquery-1.10.2.min.js'}
+    %script{src: 'js/underscore-min.js'}
+    %script{src: 'js/main.js'}

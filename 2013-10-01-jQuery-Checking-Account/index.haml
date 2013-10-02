@@ -6,13 +6,14 @@
     %link{rel: 'stylesheet', href: 'css/normalize.css'}
     %link{rel: 'stylesheet', href: 'css/style.css'}
   %body
-    = Haml::Engine.new(File.read('haml/_header.haml')).render
-    = Haml::Engine.new(File.read('haml/_nav.haml')).render
-    = Haml::Engine.new(File.read('haml/_content.haml')).render
-    = Haml::Engine.new(File.read('haml/_footer.haml')).render
-
-    #qunit
-    #qunit-fixture
+    %h1 BANK OF NASHVILLE
+    %container
+      %h1#balance
+        Your Balance: $
+        %span#money 1000
+    %input#field{type: "text", placeholder: "Enter Amount Here"}
+    %input#deposit{type: "button", value: "Deposit"}
+    %input#withdraw{type: "button", value: "Withdraw"}
 
     %script{src: 'js/jquery-1.10.2.min.js'}
     %script{src: 'js/underscore-min.js'}

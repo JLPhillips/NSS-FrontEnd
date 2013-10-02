@@ -6,13 +6,19 @@
     %link{rel: 'stylesheet', href: 'css/normalize.css'}
     %link{rel: 'stylesheet', href: 'css/style.css'}
   %body
-    = Haml::Engine.new(File.read('haml/_header.haml')).render
-    = Haml::Engine.new(File.read('haml/_nav.haml')).render
-    = Haml::Engine.new(File.read('haml/_content.haml')).render
-    = Haml::Engine.new(File.read('haml/_footer.haml')).render
+    #a A
+    #b B
+    #c C
+    %p#d.e D
+    %p#e.e E
+    %p#f.e F
 
-    #qunit
-    #qunit-fixture
+    %input#num1{type: "text"}
+    %span.sym +
+    %input#num2{type: "text"}
+    %span.sym =
+    / %span#result Answer
+    %input#add{type: "button", value: "Add!"}
 
     %script{src: 'js/jquery-1.10.2.min.js'}
     %script{src: 'js/underscore-min.js'}

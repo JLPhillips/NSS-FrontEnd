@@ -7,12 +7,16 @@
     <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
-    <header></header>
-    <nav></nav>
-    <section></section>
-    <footer></footer>
-    <div id='qunit'></div>
-    <div id='qunit-fixture'></div>
+    <h1>BANK OF NASHVILLE</h1>
+    <container>
+      <h1 id='balance'>
+        Your Balance: $
+        <span id='money'>1000</span>
+      </h1>
+    </container>
+    <input id='field' placeholder='Enter Amount Here' type='text'>
+    <input id='deposit' type='button' value='Deposit'>
+    <input id='withdraw' type='button' value='Withdraw'>
     <script src='js/jquery-1.10.2.min.js'></script>
     <script src='js/underscore-min.js'></script>
     <script src='js/main.js'></script>

@@ -1,0 +1,26 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    %meta{charset: 'utf-8'}
+    %title QUnit Template
+    %link{rel: 'stylesheet', href: 'css/normalize.css'}
+    %link{rel: 'stylesheet', href: 'css/style.css'}
+  %body
+    %section#h1
+      %h1 Piglatinize: Reverse!
+    %section#h3
+      %h3 Turn any string of words into their Pig Latin equivalents...in reverse order!
+    #overall
+      #form
+        #container
+          %input#word{type: "text", placeholder: "Enter Your Words Here!"}
+          %span.sym
+            %img{src: "images/arrow.png", height: "30px", width: "auto"}/
+          %input#result{type: "text", readonly: true}
+          %input#button{type: "button", value: "Igpay Atinlay!"}
+    %section#h6
+      %h6 (Be sure to seperate your words like this: John, Paul, George Ringo)
+
+    %script{src: 'js/jquery-1.10.2.min.js'}
+    %script{src: 'js/underscore-min.js'}
+    %script{src: 'js/main.js'}
