@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>QUnit Template</title>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+  </head>
+  <body>
+    <div id='top'>
+      <div id='logobox'>
+        <div class='logo'></div>
+        <h1>The Geek Bank</h1>
+        <div class='logo'></div>
+      </div>
+    </div>
+    <div id='middle'>
+      <div id='logocontainer'>
+        <input autofocus id='logoField' placeholder='Enter Logo URL Here' type='text'>
+        <input id='logoButton' type='button' value='Add Logo'>
+      </div>
+      <div id='balancecontainer'>
+        <input id='balanceField' placeholder='Enter Initial Balance Here' type='text'>
+        <input id='balanceButton' type='button' value='Add Balance'>
+        <div id='balance'>
+          <h2>
+            $
+            <span id='amount'>0.00</span>
+          </h2>
+        </div>
+      </div>
+      <div id='actioncontainer'>
+        <input id='actionField' placeholder='Enter Amount Here' type='text'>
+        <input id='depositButton' type='button' value='Deposit'>
+        <input id='withdrawButton' type='button' value='Withdraw'>
+      </div>
+    </div>
+    <div id='bottom'>
+      <h3>Transaction List</h3>
+      <div id='transactioncontainer'>
+        <div id='deposits'>
+          <ul id='depositlist'></ul>
+        </div>
+        <div id='withdraws'>
+          <ul id='withdrawlist'></ul>
+        </div>
+      </div>
+    </div>
+    <script src='js/jquery-1.10.2.min.js'></script>
+    <script src='js/underscore-min.js'></script>
+    <script src='js/main.js'></script>
+  </body>
+</html>

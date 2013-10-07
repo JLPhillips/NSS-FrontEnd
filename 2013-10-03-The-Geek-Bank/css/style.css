@@ -1,0 +1,114 @@
+html {
+  background: url(http://moneystrategiesforall.files.wordpress.com/2013/03/money22.jpg) no-repeat;
+}
+
+body {
+  height: 750px;
+  width: 600px;
+  margin: auto;
+  background-color: #e3e3e3;
+  -webkit-box-shadow: 0 0 10px black;
+  -moz-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+}
+
+#top {
+  width: 600px;
+  float: left;
+  margin-bottom: 60px;
+}
+
+#middle {
+  width: 600px;
+  float: left;
+  margin-bottom: 30px;
+}
+
+#bottom {
+  width: 600px;
+  float: left;
+}
+
+#balance {
+  width: 200px;
+  height: 40px;
+  margin: 20px auto;
+  border: 3px solid black;
+}
+
+h2 {
+  margin: auto;
+  width: 120px;
+  margin-top: 5px;
+}
+
+#logobox {
+  width: 518px;
+  margin: auto;
+  padding-top: 40px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 0 10px;
+  float: left;
+}
+
+h1 {
+  position: relative;
+  top: 15px;
+  float: left;
+}
+
+#logocontainer {
+  width: 324px;
+  margin: auto;
+}
+
+#balancecontainer {
+  width: 349px;
+  margin: 20px auto;
+}
+
+#actioncontainer {
+  width: 406px;
+  margin: 20px auto;
+}
+
+#transactioncontainer {
+width: 600px;
+float: left;
+height: 200px;
+margin-top: 20px;
+}
+
+#deposits {
+width: 300px;
+float: left;
+}
+
+#depositlist {
+  color: green;
+  position: relative;
+  left: 125px;
+  list-style: none;
+}
+
+#withdraws {
+width: 300px;
+float: left;
+}
+
+#withdrawlist {
+  color: red;
+  position: relative;
+  left: 40px;
+  list-style: none;
+}
+
+h3 {
+  width: 167px;
+  margin: auto;
+}

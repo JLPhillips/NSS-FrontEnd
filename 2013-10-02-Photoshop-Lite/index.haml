@@ -11,9 +11,13 @@
       %input#color{type: "text", placeholder: "Enter Color Here", autofocus: true}
       %input#colorbutton{type:"button", value: "Add Color"}
       %input#colorclearbutton{type:"button", value: "Clear Colors"}
-      .box#brush
-      .clear
+      %span#brush
       #colorbox
+      .clear
+      %input#amount{type: "text", placeholder: "Enter Box Amount (ex5100)"}
+      %input#add_box{type:"button", value: "Add Boxes"}
+      %input#clear_box{type:"button", value: "Clear Boxes"}
+      #boxes
 
     %script{src: 'js/jquery-1.10.2.min.js'}
     %script{src: 'js/underscore-min.js'}

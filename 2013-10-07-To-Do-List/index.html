@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <title>To-Do List</title>
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
+  </head>
+  <body>
+    <h1>TO DO</h1>
+    <div id='entry'>
+      <input autofocus id='date' placeholder='Enter Due Date Here' type='text'>
+      <input id='task' placeholder='Enter Task Here' type='text'>
+      <input id='color' placeholder='Enter Color Here' type='text'>
+      <input id='taskbutton' type='button' value='Add Task'>
+    </div>
+    <div id='list'>
+      <table>
+        <tr>
+          <th>Due Date</th>
+          <th>Task</th>
+          <th>Color</th>
+          <th>Done?</th>
+          <th>Remove?</th>
+          <th>Move</th>
+        </tr>
+      </table>
+    </div>
+    <script src='js/jquery-1.10.2.min.js'></script>
+    <script src='js/underscore-min.js'></script>
+    <script src='js/main.js'></script>
+  </body>
+</html>

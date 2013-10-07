@@ -1,0 +1,11 @@
+.upbutton {
+  height: 25px;
+  width: 25px;
+  background: url(../images/up.png) no-repeat;
+  background-size: 20px 20px; }
+
+.downbutton {
+  height: 25px;
+  width: 25px;
+  background: url(../images/down.png) no-repeat;
+  background-size: 20px 20px; }

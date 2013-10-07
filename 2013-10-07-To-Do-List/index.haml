@@ -1,0 +1,28 @@
+!!! 5
+%html{lang: 'en'}
+  %head
+    %meta{charset: 'utf-8'}
+    %title To-Do List
+    %link{rel: 'stylesheet', href: 'css/normalize.css'}
+    %link{rel: 'stylesheet', href: 'css/style.css'}
+  %body
+    %h1 TO DO
+    #entry
+      %input#date{type: "text", placeholder: "Enter Due Date Here", autofocus: true}
+      %input#task{type: "text", placeholder: "Enter Task Here"}
+      %input#color{type: "text", placeholder: "Enter Color Here"}
+      %input#taskbutton{type: "button", value: "Add Task"}
+
+    #list
+      %table
+        %tr
+          %th Due Date
+          %th Task
+          %th Color
+          %th Done?
+          %th Remove?
+          %th Move
+
+    %script{src: 'js/jquery-1.10.2.min.js'}
+    %script{src: 'js/underscore-min.js'}
+    %script{src: 'js/main.js'}

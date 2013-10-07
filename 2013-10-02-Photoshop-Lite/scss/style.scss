@@ -1,18 +1,29 @@
 html {
-  background-color: blue;
+  background-color: #ffa357;
 }
 
 body {
   background-color: #e3e3e3;
   width: 760px;
-  height: 180px;
+  height: 805px;
   margin: 0 auto;
+  -webkit-box-shadow: 0 0 10px black;
+  -moz-box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px black;
+}
+
+#amount, #add_box {
+  margin-top: 20px;
 }
 
 h1 {
   margin: auto;
-  padding-top: 20px;
+  padding-top: 40px;
   width: 350px;
+}
+
+#colorbox {
+  margin-top: 15px;
 }
 
 .box {
@@ -23,16 +34,31 @@ h1 {
   float: left;
 }
 
+.paintbox {
+  height: 5px;
+  width: 5px;
+  margin: 0;
+  padding: 0;
+  border: 1px dashed black;
+  float: left;
+  display: block;
+}
+
 #form {
  width: 530px;
  margin: 20px auto;
 }
 
 #brush {
-  float: right;
-  margin-top: -10px;
+  border: 3px solid black;
+  padding: 2px 15px;
+  margin-left: 25px;
 }
 
 .clear {
   clear: both;
+}
+
+#boxes {
+  margin-top: 40px;
 }
