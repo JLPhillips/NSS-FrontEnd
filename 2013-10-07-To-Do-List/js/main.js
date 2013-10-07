@@ -41,7 +41,6 @@ function addTask(){
   $removeButton.attr("value", "Remove");
   $removeButton.addClass("removebutton");
 
-
   var $upButton = $("<input>");
   $upButton.attr("type", "button");
   $upButton.addClass("upbutton");
@@ -51,7 +50,6 @@ function addTask(){
   $downButton.attr("type", "button");
   $downButton.addClass("downbutton");
   $downButton.css("height", "25px").css("width", "25px");
-
 
   $date.append($datedata);
   $task.append($taskdata);
@@ -97,3 +95,12 @@ function gray(){
     $gray.css("background-color", "white");
   }
 }
+
+
+
+// HOW CHYLD DID THE MOVE BUTTONS
+
+// var $upImg = $("<img>");
+// $upImg.attr("src", "images/up.png");
+// $upImg.addClass("up");
+
