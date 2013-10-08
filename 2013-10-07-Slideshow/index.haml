@@ -4,7 +4,7 @@
 %head
   %meta{charset: "utf-8"}
   %meta{name: "viewport", content: "width=device-width"}
-  %title Flickr App
+  %title Flickr Slideshow App
   %link{rel: "stylesheet", href: "css/normalize.css"}
   %link{rel: "stylesheet", href: "css/foundation.css"}
   %link{rel: "stylesheet", href: "css/app.css"}
@@ -18,16 +18,10 @@
       %input#query{type: "text", autofocus: true}
     .small-10.columns
       %input#search.button.radius.small{type: "button", value: "Search Flickr"}
-      %input#deletebutton.button.radius.small.alert{type: "button", value: "Delete Selected"}
-      %input#clearbutton.button.radius.small.alert{type: "button", value: "Delete All"}
-      %input#savebutton.button.radius.small.success{type: "button", value: "Save Selected"}
   .row
     .small-12.columns#left
       %h4.subheader Searched Photos
       #photos
-    .small-12.columns#right
-      %h4.subheader Saved Photos
-      #saved_photos
 
 
 
