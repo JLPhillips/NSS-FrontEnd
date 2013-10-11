@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <title>Stock Market</title>
+  <link href='css/normalize.css' rel='stylesheet'>
+  <link href='css/foundation.css' rel='stylesheet'>
+  <link href='css/app.css' rel='stylesheet'>
+  <script src='js/vendor/custom.modernizr.js'></script>
+</head>
+<body>
+  <div id='logo'>
+    <div class='row' id='logorow'>
+      <div class='small-12 columns'>
+        <img id='logoimg' src='../img/logo.png'>
+      </div>
+    </div>
+  </div>
+  <div id='linecontainer'>
+    <div class='row' id='linerow'>
+      <div class='small-12 columns'>
+        <div id='line'></div>
+      </div>
+    </div>
+  </div>
+  <div id='top'>
+    <div class='row'>
+      <div class='small-2 columns'>
+        <input autofocus id='symbol' placeholder='Symbol' type='text'>
+      </div>
+      <div class='small-2 columns'>
+        <input id='quantity' placeholder='Amount' type='text'>
+      </div>
+      <div class='small-1 columns'>
+        <input class='button buttonshadow radius small success' id='buy' type='button' value='Buy'>
+      </div>
+      <div class='small-2 columns'>
+        <input id='amount' placeholder='Balance' type='text'>
+      </div>
+      <div class='small-1 columns'>
+        <input class='button buttonshadow radius small' id='setbalance' type='button' value='Set'>
+      </div>
+      <div class='small-2 columns'>
+        <input id='interval' placeholder='Interval' type='text'>
+      </div>
+      <div class='small-2 columns'>
+        <input class='button buttonshadow radius alert small' id='settime' type='button' value='Set'>
+      </div>
+    </div>
+  </div>
+  <div id='balancecontainer'>
+    <div class='row' id='balancerow'>
+      <div class='small-12 columns'>
+        <h3 id='balance'>
+          Balance: $
+          <span id='dollaramount'>0.00</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div id='linecontainer'>
+    <div class='row' id='linerow'>
+      <div class='small-12 columns'>
+        <div id='line'></div>
+      </div>
+    </div>
+  </div>
+  <div id='middle'>
+    <div class='row'>
+      <div class='small-12 columns'>
+        <h3 id='stocklisttitle'>Stock List</h3>
+      </div>
+    </div>
+  </div>
+  <div id='linecontainer'>
+    <div class='row' id='linerow'>
+      <div class='small-12 columns'>
+        <div id='stockline'></div>
+      </div>
+    </div>
+  </div>
+  <div id='stocklistcontainer'>
+    <div class='row'>
+      <div class='small-12 columns'>
+        <table id='stocks'>
+          <tr>
+            <th>Name</th>
+            <th>Symbol</th>
+            <th>Quote</th>
+            <th>Purchased</th>
+            <th>Total</th>
+            <th>Current</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div id='linecontainer'>
+    <div class='row' id='linerow'>
+      <div class='small-12 columns'>
+        <div id='line'></div>
+      </div>
+    </div>
+  </div>
+  <div id='totalcontainer'>
+    <div class='row' id='totalrow'>
+      <div class='small-2 columns'>
+        <h3 id='total'>
+          Total: $
+          <span id='totaldollars'>0.00</span>
+        </h3>
+      </div>
+    </div>
+  </div>
+  <script src='js/vendor/jquery-1.10.2.js'></script>
+  <script src='js/vendor/foundation.min.js'></script>
+  <script src='js/vendor/underscore.js'></script>
+  <script src='js/vendor/moment.min.js'></script>
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <script src='js/app/app.js'></script>
+</body>

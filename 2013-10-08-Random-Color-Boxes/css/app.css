@@ -1,0 +1,7 @@
+.box {
+  border: 0px solid black;
+  float: left;
+  margin: 0px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px; }

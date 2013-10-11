@@ -1,0 +1,84 @@
+!!! 5
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+%head
+  %meta{charset: "utf-8"}
+  %meta{name: "viewport", content: "width=device-width"}
+  %title Stock Market
+  %link{rel: "stylesheet", href: "css/normalize.css"}
+  %link{rel: "stylesheet", href: "css/foundation.css"}
+  %link{rel: "stylesheet", href: "css/app.css"}
+  %script{src: "js/vendor/custom.modernizr.js"}
+
+%body
+  #logo
+    .row#logorow
+      .small-12.columns
+        %img#logoimg{src: "../img/logo.png"}
+  #linecontainer
+    .row#linerow
+      .small-12.columns
+        #line
+  #top
+    .row
+      .small-2.columns
+        %input#symbol{type:"text", placeholder: "Symbol", autofocus: true}
+      .small-2.columns
+        %input#quantity{type:"text", placeholder: "Amount"}
+      .small-1.columns
+        %input#buy.button.buttonshadow.radius.small.success{type:"button", value: "Buy"}
+      .small-2.columns
+        %input#amount{type: "text", placeholder: "Balance"}
+      .small-1.columns
+        %input#setbalance.button.buttonshadow.radius.small{type: "button", value: "Set"}
+      .small-2.columns
+        %input#interval{type: "text", placeholder: "Interval"}
+      .small-2.columns
+        %input#settime.button.buttonshadow.radius.alert.small{type: "button", value: "Set"}
+  #balancecontainer
+    .row#balancerow
+      .small-12.columns
+        %h3#balance
+          Balance: $
+          %span#dollaramount 0.00
+  #linecontainer
+    .row#linerow
+      .small-12.columns
+        #line
+  #middle
+    .row
+      .small-12.columns
+        %h3#stocklisttitle Stock List
+  #linecontainer
+    .row#linerow
+      .small-12.columns
+        #stockline
+  #stocklistcontainer
+    .row
+      .small-12.columns
+        %table#stocks
+          %tr
+            %th Name
+            %th Symbol
+            %th Quote
+            %th Purchased
+            %th Total
+            %th Current
+  #linecontainer
+    .row#linerow
+      .small-12.columns
+        #line
+  #totalcontainer
+    .row#totalrow
+      .small-2.columns
+        %h3#total
+          Total: $
+          %span#totaldollars 0.00
+
+
+  %script{src: "js/vendor/jquery-1.10.2.js"}
+  %script{src: "js/vendor/foundation.min.js"}
+  %script{src: "js/vendor/underscore.js"}
+  %script{src: "js/vendor/moment.min.js"}
+  %script{src: "https://cdn.firebase.com/v0/firebase.js"}
+  %script{src: "js/app/app.js"}
