@@ -1,0 +1,22 @@
+#left
+  #map-canvas
+#right
+  .row
+    .small-12.columns
+      %h1 Vacation Map
+  .row
+    .small-7.columns
+      %input#zoom{type: "text", placeholder: "Enter Number"}
+    .small-5.columns
+      %input#setzoom.button.radius.small.expand{type: "button", value: "Set Zoom"}
+  .row
+    .small-7.columns
+      %input#location{type: "text", placeholder: "Enter Location"}
+    .small-5.columns
+      %input#addlocation.button.radius.small.expand.success{type: "button", value: "Add Location"}
+  .row
+    .small-7.columns
+      %select#locationselect{type: "text"}
+        %option Select Location
+    .small-5.columns
+      %input#golocation.button.radius.small.expand.alert{type: "button", value: "Set Location"}

@@ -8,14 +8,14 @@ var Δbalance;
 var db = {};
 var stocks = [];
 var symarray = [];
-// db.balance.grandtotal = 0;
+
 
 
 $(document).ready(initialize);
 
 function initialize(){
   $(document).foundation();
-  Δdb = new Firebase("https://stock-market-jlp.firebaseio.com/");
+  Δdb = new Firebase("https://stock-market-graph-jlp.firebaseio.com/");
   Δstocks = Δdb.child("stocks");
   Δbalance = Δdb.child("balance");
 
@@ -49,7 +49,6 @@ function updateCurrent(data){
   }else{
     $(symbol).addClass("green");
   }
-  // db.balance.final += price;
 }
 
 function updateRows(snapshot){
@@ -92,44 +91,11 @@ function requestQuote(symbol, fn){
   $.getJSON("http://dev.markitondemand.com/Api/Quote/jsonp?callback=?", data, fn);
 }
 
-// function add(){
-//   getStockQuote();
-
-// }
-
-// function getStockQuote(){
-//   var data = {};
-//   var symbol = $("#symbol").val();
-//   data.symbol = symbol;
-//   $.getJSON("http://dev.markitondemand.com/Api/Quote/jsonp?callback=?", data, receivedQuote);
-// }
-
-// function pushRow(input){
-//   var stock = [];
-//   var data = input.val();
-//   stock.name = data.Name;
-//   stock.symbol = data.Symbol;
-//   stock.quote = data.Quote;
-//   stock.purchased = data.LastPrice * $("#quantity").val();
-//   Δstocks.push(stock);
-//   db.stocks.push(stock);
-
-// }
-
-// function receivedQuote(data, textStatus, jqXHR){
-//   console.log(data);
-//   console.log(textStatus);
-//   console.log(jqXHR);
-//   alert("It worked, bitch.");
-//   pushRow(data);
-// }
-
 function setBalance(){
   var amount = parseFloat($("#amount").val());
   var balance = {};
   balance.total = 0;
   balance.stock = 0;
-  // balance.final = 0;
   balance.amount = amount;
   Δbalance.set(balance);
 
@@ -164,44 +130,5 @@ function addRow(stock){
   $row.children(".total").text((stock.purchasePrice * stock.quantity).toFixed(2));
   $row.children(".current").addClass(stock.symbol);
 
-
   $("#stocks").append($row);
 }
-
-function addCurrent(){
-  var sum = 0;
-  $(".current").each(function() {
-    sum += parseInt($(this).html(), 10);
-  });
-  console.log(sum);
-}
-
-// function add(){
-//   var name = $("#name").val();
-//   var symbol = parseInt($("#symbol").val(),10);
-//   var quote = parseInt($("#quote").val(),10);
-//   var purchased = $("#purchased").val();
-//   var total = $("#total").val();
-
-//   var item = {};
-//   item.name = name;
-//   item.symbol = symbol;
-//   item.quote = quote;
-//   item.purchased = purchased;
-//   item.total = total;
-
-//   Δstocks.push(item);
-// }
-
-// function makeRow(){
-//   var row = "<tr><td class='name'></td><td class='symbol'></td><td class='quote'></td><td class='purchased'></td><td class='total'></td></tr>";
-//   var $row = $(row);
-
-//   $row.children(".name").text(item.name);
-//   $row.children(".symbol").text(item.count);
-//   $row.children(".quote").text("$" + item.cost);
-//   $row.children(".purchased").text(item.room);
-//   $row.children(".total").text(item.condition);
-
-//   $("#stocks").append($row);
-// }

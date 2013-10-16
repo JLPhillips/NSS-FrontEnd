@@ -161,20 +161,20 @@ function addRow(stock){
   $row.children(".symbol").text(stock.symbol);
   $row.children(".quote").text((stock.purchasePrice).toFixed(2));
   $row.children(".purchased").text(stock.quantity);
-  $row.children(".total").text((stock.purchasePrice * stock.quantity).toFixed(2));
+  $row.children(".total").text(stock.purchasePrice * stock.quantity);
   $row.children(".current").addClass(stock.symbol);
 
 
   $("#stocks").append($row);
 }
 
-function addCurrent(){
-  var sum = 0;
-  $(".current").each(function() {
-    sum += parseInt($(this).html(), 10);
-  });
-  console.log(sum);
-}
+// function addCurrent(){
+//   var sum = 0;
+//   $(".current").each(function() {
+//     sum += parseInt($(this).html(), 10);
+//   });
+//   console.log(sum);
+// }
 
 // function add(){
 //   var name = $("#name").val();
