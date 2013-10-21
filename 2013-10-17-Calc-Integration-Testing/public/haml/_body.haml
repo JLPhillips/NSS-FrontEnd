@@ -1,0 +1,37 @@
+/#map-canvas
+#overall
+  #maincontainer
+    #calc
+      .row
+        .small-2.columns
+          %input#op1{type: "text", placeholder: "#", autofocus: true}
+        .small-2.columns
+          %input#operator{type: "text", placeholder: "Op"}
+        .small-2.columns
+          %input#op2{type: "text", placeholder: "#"}
+        .small-2.columns
+          %input#calculate.button.radius.small.success.expand{type: "button", value: "Go"}
+        .small-2.columns
+          %input#reset.button.radius.small.alert.expand{type: "button", value: "Reset"}
+        .small-2.columns
+    #resultcontainer
+      .row
+        .small-12.columns
+          #resultbox
+            %h1#result RESULT
+    #historycontainer
+      .row
+        .small-12.columns
+          #historybox
+            %h1#historytitle HISTORY
+            %ul#history
+    #historybuttonscontainer
+      .row
+        .small-3.columns
+          %input#sum.button.radius.small.expand{type: "button", value: "Sum"}
+        .small-3.columns
+          %input#product.button.radius.small.expand{type: "button", value: "Product"}
+        .small-3.columns
+          %input#positive.button.radius.small.expand{type: "button", value: "Positive"}
+        .small-3.columns
+          %input#negative.button.radius.small.expand{type: "button", value: "Negative"}
