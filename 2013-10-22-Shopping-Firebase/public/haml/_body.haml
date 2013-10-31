@@ -1,0 +1,97 @@
+#overall
+  #top
+    .row
+      .small-2.columns
+        %input#product-image{type: 'text', placeholder: 'Image'}
+      .small-2.columns
+        %input#product-name{type: 'text', placeholder: 'Name'}
+      .small-2.columns
+        %input#product-weight{type: 'text', placeholder: 'Weight'}
+      .small-2.columns
+        %input#product-price{type: 'text', placeholder: 'Price'}
+      .small-2.columns
+        %input#product-off{type: 'text', placeholder: 'Sale Percentage'}
+      .small-2.columns
+        %input#add-product.small.radius.button.expand{type: 'button', value: 'Add Product'}
+    .row
+      .small-2.columns
+        %input#customer-image{type: 'text', placeholder: 'Image'}
+      .small-4.columns
+        %input#customer-name{type: 'text', placeholder: 'Name'}
+      .small-2.columns
+        %input#domestic{type: 'radio', name: 'address', value: 'domestic'} Domestic
+      .small-2.columns
+        %input#international{type: 'radio', name: 'address', value: 'international'} International
+      .small-2.columns
+        %input#add-customer.small.radius.button.expand{type: 'button', value: 'Add Customer'}
+    .row
+      .small-12.columns
+        %table#products
+          %tr
+            %th Image
+            %th Name
+            %th Weight
+            %th Price
+            %th % Off
+            %th Sale
+    .row
+      .small-6.columns
+        #previous.hidden.button.tiny.alert.expand Previous
+      .small-6.columns
+        #next.hidden.button.tiny.success.expand Next
+    .row
+      .small-3.columns
+        %select#select-customer
+          %option Select Customer
+      .small-9.columns
+        %table#cart
+          %thead
+            %tr
+              %th Name
+              %th Count
+              %th Amount
+              %th Weight
+              %th Shipping
+              %th Total
+          %tbody
+          %tfoot
+            %tr
+              %td
+              %td#cart-count
+              %td#cart-amount
+              %td#cart-weight
+              %td#cart-shipping
+              %td#cart-grand
+        #purchase
+    .row
+      .small-12.columns
+        %input#purchasebutton.button.radius.small.success.expand{type: "button", value: "Complete Order"}
+  #orderscontainer
+    %img#smallapplelogo{src: "../img/apple.png"}
+    %h1 Thank you!
+    %h4 Your orders:
+    .row
+      .small-12.columns
+        %table#orders
+          %thead
+            %tr
+              %th ID
+              %th Time
+              %th Customer
+              %th Products
+              %th Sub-Total
+              %th Shipping
+              %th Total
+          %tbody
+          / %tfoot
+          /   %tr
+          /     %td Totals
+          /     %td#order-time
+          /     %td#order-customer
+          /     %td#order-products
+          /     %td#order-subtotal
+          /     %td#order-shipping
+          /     %td#order-grand
+    / %h2 Refresh to place another order!
+#plate
+  %img#applelogo{:src => "../img/apple.png", :alt => ""}/

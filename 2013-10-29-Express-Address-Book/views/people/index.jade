@@ -1,0 +1,21 @@
+extends ../template/layout
+
+block content
+  #overall
+    h1 ADDRESS BOOK
+    h2#subtitlepeople PEOPLE
+    #line
+    a(href="/") HOME
+    a(href="/people/new") NEW
+    - var person = people[0]
+
+    if person
+      table#people
+        thead(id="thead"): tr
+          each value, property in person
+            th: h2= property
+        tbody
+          each person, index in people
+            tr(id=person.NAME, style="background-color:#{person.COLOR}")
+              each value, property in person
+                td(class=property)= value

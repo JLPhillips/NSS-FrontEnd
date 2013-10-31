@@ -1,0 +1,42 @@
+extends ../template/layout
+
+block content
+  #overall
+    .row
+      .small-12.columns
+        h1#movietitle MOVIE PAGE
+        #line
+        a#movielink(href="/") HOME
+        a#movielink(href="/movies/new") NEW MOVIE
+    .row
+      .small-12.columns
+        -var movie = movies[0]
+        if movie
+          table#movies
+            thead: tr
+              each value, property in movie
+                unless value instanceof Function || property === "GROSS"
+                  if property === "numTheaters"
+                    th: h4 THEATERS NUMBER
+                  else
+                    th: h4= property
+              th: h4 THEATER GROSS
+              th: h4 GROSS
+              th: h4 DELETE
+            tbody
+              each movie in movies
+                tr
+                  each value, property in movie
+                    unless value instanceof Function || property === "GROSS"
+                      case property
+                        when "IMAGE": td: img(src=value)
+                        when "COLOR": td(style="background-color:#{value};")
+                        when "RATED": td: img(src=value)
+                        when "STUDIO": td: img(src=value)
+                        default: td= value
+                  //- td= movie.grossPerTheaterUSD()
+                  //- td= movie.grossUSD()
+                  td
+                    form(action="/movies/#{movie.TITLE}", method="post")
+                      input(type="hidden", name="_method", value="delete")
+                      button(type="submit") Delete

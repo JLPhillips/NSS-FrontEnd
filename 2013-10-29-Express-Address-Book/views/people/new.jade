@@ -1,0 +1,16 @@
+extends ../template/layout
+include ../mixins/form-helper.jade
+
+block content
+  #overall
+    h1 ADDRESS BOOK
+    h2#subtitlenew NEW PERSON
+    #line
+    a(href="/") HOME
+    a(href="/people") PEOPLE
+    form(action="/people", method="post")
+      mixin field("name", "", "NAME", true)
+      mixin field("age", "", "AGE", false)
+      mixin field("gender", "", "GENDER", false)
+      mixin field("color", "", "COLOR", false)
+      button(type="submit") SAVE

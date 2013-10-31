@@ -1,0 +1,22 @@
+extends ../template/layout
+
+block content
+  #overall
+    h1 TO-DO LIST
+    h2#subtitlelist LIST
+    #line
+    a(href="/") HOME
+    a(href="/list/new") NEW
+    h2= list[0]
+    - var listitem = list[0]
+
+    if person
+      table#todolist
+        thead(id="thead"): tr
+          each value, property in listitem
+            th: h2= property
+        tbody
+          each person, index in list
+            tr(id=listitem.NAME, style="background-color:#{person.COLOR}")
+              each value, property in person
+                td(class=property)= value

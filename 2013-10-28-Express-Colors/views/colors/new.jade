@@ -1,0 +1,16 @@
+extends ../template/layout
+block content
+  h1 Make New Colors!
+  div(id="overall")
+    form(action="/colors", method="post")
+      input(name="color", type="text", placeholder="Enter Color Here", autofocus=true)
+      button(type="submit") Save Color
+
+
+
+
+//- <form action="" method="post">
+//-   <label for="POST-name">Name:</label>
+//-   <input id="POST-name" type="text" name="name">
+//-   <input type="submit" value="Save">
+//- </form>

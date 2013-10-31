@@ -1,0 +1,75 @@
+html {
+  background-color: #3e4254; }
+
+body {
+  width: 960px;
+  height: 100%;
+  margin: auto;
+  background-color: transparent; }
+
+#overall {
+  width: 960px;
+  height: 100%;
+  margin: 40px auto;
+  background-color: #fdfdfd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 25px black;
+  -moz-box-shadow: 0 0 25px black;
+  box-shadow: 0 0 25px black;
+  padding-top: 20px; }
+
+#plate {
+  width: 960px;
+  height: 560px;
+  margin: 40px auto;
+  background-color: #fdfdfd;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  margin-top: -600px; }
+
+h1 {
+  color: #3e4254;
+  width: 240px;
+  margin: auto;
+  margin-bottom: 20px; }
+
+h4 {
+  color: #3e4254;
+  margin: 10px; }
+
+img {
+  height: 100px;
+  width: 100px; }
+
+table#products, table#cart, table#orders {
+  width: 100%; }
+
+table#orders {
+  margin-bottom: 40px; }
+
+.highlight {
+  border: 2px solid red; }
+
+select {
+  height: 45px; }
+
+table, #product-image, #product-name, #product-weight, #product-price, #product-off {
+  -webkit-box-shadow: 0 0 2px #e3e3e3;
+  -moz-box-shadow: 0 0 2px #e3e3e3;
+  box-shadow: 0 0 2px #e3e3e3; }
+
+#applelogo {
+  width: 200px;
+  height: 200px;
+  margin: 165px auto;
+  margin-left: 375px; }
+
+#smallapplelogo {
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  margin-left: 375px; }

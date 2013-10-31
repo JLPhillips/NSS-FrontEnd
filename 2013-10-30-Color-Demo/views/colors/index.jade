@@ -1,0 +1,25 @@
+extends ../template/layout
+
+block content
+  #overall
+    .row
+      .small-12.columns
+        h1 COLORS
+    .row
+      .small-12.columns
+        h4#subtitlecolors COLORS PAGE
+    .row
+      .small-12.columns
+        #line
+    .row
+      .small-12.columns
+        a(href='/') HOME
+    .row
+      - var width = (100 / colors.length);
+      table#colors
+        thead: tr
+          each color in colors
+            th= color
+        tbody: tr
+          each color in colors
+            td.color(style="background-color:#{color};width:#{width}:%;")

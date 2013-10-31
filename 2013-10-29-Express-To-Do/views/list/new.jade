@@ -1,0 +1,15 @@
+extends ../template/layout
+include ../mixins/form-helper.jade
+
+block content
+  #overall
+    h1 TO-DO LIST
+    h2#subtitlenew NEW LIST ITEM
+    #line
+    a(href="/") HOME
+    a(href="/list") LIST
+    form(method="/list", action="post")
+      mixin field("color", "", "COLOR", true)
+      mixin field("item", "", "ITEM", false)
+      mixin field("duedate", "", "DUE DATE", false)
+      button(type="submit") SAVE

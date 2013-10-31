@@ -1,0 +1,20 @@
+extends ../template/layout
+include ../mixins/form-helper.jade
+
+block content
+  #overall
+    .row
+      .small-12.columns
+        h1#newtitle NEW MOVIE
+        #line
+        a#movielink(href="/") HOME
+        a#movielink(href="/movies") MOVIES
+        form(method="post", action="/movies")
+          mixin field("TITLE", "", "TITLE", true)
+          mixin field("IMAGE", "", "IMAGE", false)
+          mixin field("COLOR", "", "COLOR", false)
+          mixin field("RATED", "", "RATED", false)
+          mixin field("STUDIO", "", "STUDIO", false)
+          mixin field("numTheaters", "", "THEATER NUMBER", false)
+          mixin field("GROSS", "", "GROSS", false)
+          button(type="submit") SAVE

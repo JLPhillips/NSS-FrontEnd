@@ -1,0 +1,52 @@
+/*Dark gray: 3e4254
+Light gray: fdfdfd*/
+
+@font-face {
+  font-family: 'KabelLTStd-Heavy';
+  src: url("KabelLTStd-Heavy.otf"); }
+
+html {
+  background-color: #3e4254;
+  font-family:'KabelLTStd-Heavy';
+}
+
+body {
+  width: 960px;
+  height: 100%;
+  background-color: transparent;
+}
+
+#overall {
+  margin: 50px auto;
+  background-color: #fdfdfd;
+  width: 270px;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 25px black;
+  -moz-box-shadow: 0 0 25px black;
+  box-shadow: 0 0 25px black;
+  color: #3e4254;
+}
+
+h2, h3 {
+  margin: 20px;
+}
+
+h1 {
+  margin: auto;
+  padding-top: 30px;
+  width: 115px;
+}
+
+#mathsubtitle {
+  margin-top: -.5px;
+}
+
+#line {
+  border-bottom: 2px solid #3e4254;
+  width: 200px;
+  margin: auto;
+  margin-top: -10px;
+}

@@ -1,0 +1,29 @@
+[
+{
+"TITLE": "Lord of the Rings: The Fellowship of the Ring",
+"IMAGE":"http://upload.wikimedia.org/wikipedia/en/thumb/0/0c/The_Fellowship_Of_The_Ring.jpg/215px-The_Fellowship_Of_The_Ring.jpg",
+"COLOR":"red",
+"RATED":"http://motleyvision.org/ldscinema/wp-content/uploads/2012/06/pg-13.png",
+"STUDIO":"http://imagery.playerattack.com/2010/02/NewLineCinema-Logo.png",
+"GROSS":142342433324,
+"numTheaters":23
+},
+{
+"TITLE":"Lord of the Rings: The Two Towers",
+"IMAGE":"http://wtfbabe.files.wordpress.com/2012/11/two-towers-poster.jpg",
+"COLOR":"green",
+"RATED":"http://motleyvision.org/ldscinema/wp-content/uploads/2012/06/pg-13.png",
+"STUDIO":"http://imagery.playerattack.com/2010/02/NewLineCinema-Logo.png",
+"GROSS":242342433324,
+"numTheaters":24
+},
+{
+"TITLE":"Lord of the Rings: The Return of the King",
+"IMAGE":"http://www.posternation.com/image/view/lord-of-the-rings-the-return-of-the-king-style-k-172904",
+"COLOR":"blue",
+"RATED":"http://motleyvision.org/ldscinema/wp-content/uploads/2012/06/pg-13.png",
+"STUDIO":"http://imagery.playerattack.com/2010/02/NewLineCinema-Logo.png",
+"GROSS":342342433324,
+"numTheaters":25
+}
+]

@@ -1,0 +1,115 @@
+/*Dark gray: 3e4254
+Light gray: fdfdfd*/
+
+@font-face {
+  font-family: 'KabelLTStd-Heavy';
+  src: url("KabelLTStd-Heavy.otf"); }
+
+html {
+  background-color: #3e4254;
+}
+
+body {
+  font-family:'KabelLTStd-Heavy';
+  width: 960px;
+  height: 100%;
+  background-color: transparent;
+  margin: auto;
+}
+
+#overall {
+  margin: 50px auto;
+  background-color: #fdfdfd;
+  width: 600px;
+  height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 25px black;
+  -moz-box-shadow: 0 0 25px black;
+  box-shadow: 0 0 25px black;
+  color: #3e4254;
+  overflow: hidden;
+}
+
+h2, h3 {
+  margin: 20px;
+}
+
+h1 {
+  margin: auto;
+  padding-top: 30px;
+  width: 225px;
+}
+
+#subtitlehome {
+  margin: auto;
+  margin-top: -.5px;
+  width: 135px;
+}
+
+#subtitlepeople {
+  margin: auto;
+  margin-top: -.5px;
+  width: 90px;
+}
+
+#subtitlenew {
+  margin: auto;
+  margin-top: -.5px;
+  width: 139px;
+}
+
+#line {
+  border-bottom: 2px solid #3e4254;
+  width: 200px;
+  margin: auto;
+}
+
+a {
+  padding: 5px;
+  padding-bottom: 2px;
+  border: 2px solid #3e4254;
+  text-decoration: none;
+  color: #3e4254;
+  /*padding: none;*/
+  margin-left: 20px;
+  position: relative;
+  top: -85px;
+}
+
+a:hover {
+  background-color: #3e4254;
+  color: #fdfdfd;
+}
+
+#people {
+  width: 600px;
+  margin: auto;
+}
+
+th {
+  border-bottom: 2px solid #3e4254;
+}
+
+button {
+  width: 80px;
+  border: 2px solid #3e4254;
+  margin: 10px;
+  font-weight: 700;
+  background-color: #3e4254;
+  color: #fdfdfd;
+}
+
+button:hover {
+  background-color: #fdfdfd;
+  color: #3e4254;
+  font-weight: 700;
+}
+
+input {
+  float: left;
+  width: 100px;
+  margin: 10px;
+  border: 2px solid #3e4254;
+}

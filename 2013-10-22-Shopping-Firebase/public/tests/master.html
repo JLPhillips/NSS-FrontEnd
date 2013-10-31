@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <title>Firebase Shopping</title>
+  <link href='/css/normalize.css' rel='stylesheet'>
+  <link href='/css/foundation.css' rel='stylesheet'>
+  <link href='/css/app.css' rel='stylesheet'>
+  <script src='/js/vendor/custom.modernizr.js'></script>
+  <script src='/js/tests/keys.js'></script>
+  <link href='/css/qunit-theme-gabe.css' rel='stylesheet'>
+</head>
+<body>
+  <div id='qunit'></div>
+  <div id='qunit-fixture'>
+    <div id='overall'>
+      <div id='top'>
+        <div class='row'>
+          <div class='small-2 columns'>
+            <input id='product-image' placeholder='Image' type='text'>
+          </div>
+          <div class='small-2 columns'>
+            <input id='product-name' placeholder='Name' type='text'>
+          </div>
+          <div class='small-2 columns'>
+            <input id='product-weight' placeholder='Weight' type='text'>
+          </div>
+          <div class='small-2 columns'>
+            <input id='product-price' placeholder='Price' type='text'>
+          </div>
+          <div class='small-2 columns'>
+            <input id='product-off' placeholder='Sale Percentage' type='text'>
+          </div>
+          <div class='small-2 columns'>
+            <input class='small radius button expand' id='add-product' type='button' value='Add Product'>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='small-2 columns'>
+            <input id='customer-image' placeholder='Image' type='text'>
+          </div>
+          <div class='small-4 columns'>
+            <input id='customer-name' placeholder='Name' type='text'>
+          </div>
+          <div class='small-2 columns'>
+            <input id='domestic' name='address' type='radio' value='domestic'>Domestic</input>
+          </div>
+          <div class='small-2 columns'>
+            <input id='international' name='address' type='radio' value='international'>International</input>
+          </div>
+          <div class='small-2 columns'>
+            <input class='small radius button expand' id='add-customer' type='button' value='Add Customer'>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='small-12 columns'>
+            <table id='products'>
+              <tr>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Weight</th>
+                <th>Price</th>
+                <th>% Off</th>
+                <th>Sale</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='small-6 columns'>
+            <div class='hidden button tiny alert expand' id='previous'>Previous</div>
+          </div>
+          <div class='small-6 columns'>
+            <div class='hidden button tiny success expand' id='next'>Next</div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='small-3 columns'>
+            <select id='select-customer'>
+              <option>Select Customer</option>
+            </select>
+          </div>
+          <div class='small-9 columns'>
+            <table id='cart'>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Count</th>
+                  <th>Amount</th>
+                  <th>Weight</th>
+                  <th>Shipping</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td id='cart-count'></td>
+                  <td id='cart-amount'></td>
+                  <td id='cart-weight'></td>
+                  <td id='cart-shipping'></td>
+                  <td id='cart-grand'></td>
+                </tr>
+              </tfoot>
+            </table>
+            <div id='purchase'></div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='small-12 columns'>
+            <input class='button radius small success expand' id='purchasebutton' type='button' value='Complete Order'>
+          </div>
+        </div>
+      </div>
+      <div id='orderscontainer'>
+        <img id='smallapplelogo' src='../img/apple.png'>
+        <h1>Thank you!</h1>
+        <h4>Your orders:</h4>
+        <div class='row'>
+          <div class='small-12 columns'>
+            <table id='orders'>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Time</th>
+                  <th>Customer</th>
+                  <th>Products</th>
+                  <th>Sub-Total</th>
+                  <th>Shipping</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+              <!-- %tfoot -->
+              <!-- %tr -->
+              <!-- %td Totals -->
+              <!-- %td#order-time -->
+              <!-- %td#order-customer -->
+              <!-- %td#order-products -->
+              <!-- %td#order-subtotal -->
+              <!-- %td#order-shipping -->
+              <!-- %td#order-grand -->
+            </table>
+          </div>
+        </div>
+        <!-- %h2 Refresh to place another order! -->
+      </div>
+    </div>
+    <div id='plate'>
+      <img alt='' id='applelogo' src='../img/apple.png'>
+    </div>
+  </div>
+  <script src='/js/vendor/jquery-1.10.2.js'></script>
+  <script src='/js/vendor/foundation.min.js'></script>
+  <script src='/js/vendor/underscore.js'></script>
+  <script src='/js/vendor/moment.min.js'></script>
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <!-- %script{src: 'https://maps.googleapis.com/maps/api/js?key=__________&sensor=true'} -->
+  <script src='/js/app/app.js'></script>
+  <script src='/js/vendor/jquery.domchanged.js'></script>
+  <script src='/js/vendor/qunit-1.12.0.js'></script>
+  <script src='/js/vendor/qunit-close-enough.js'></script>
+  <script src='/js/tests/master.js'></script>
+</body>
