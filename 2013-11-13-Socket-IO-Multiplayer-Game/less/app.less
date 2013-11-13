@@ -1,0 +1,67 @@
+@base: #fdfdfd;
+
+html {
+  background: url("../images/bg.jpg") fixed no-repeat;
+  background-size: 100%;
+}
+
+body{
+  background-color: transparent;
+}
+
+.hidden {
+  display: none;
+}
+
+#fieldrow {
+  width: 600px;
+  position: relative;
+  top: -70px;
+  left: 380px;
+  margin: auto;
+}
+
+#battleground {
+  height: 815px;
+  width: 810px;
+  margin: auto;
+  clear: both;
+  // position: relative;
+  // top: -60px;
+  background: url('../images/bg2.png') center no-repeat;
+  background-size: 100%;
+}
+
+#grid {
+  height: 684px;
+  width: 670px;
+  margin: auto;
+  border: none !important;
+  background-color: transparent;
+  position: relative;
+  top: 63px;
+
+  tr {
+    background-color: transparent;
+  }
+}
+
+.square {
+  float: left;
+  height: 68.5px;
+  width: 66.8px;
+  // border: 1px dashed black;
+  // background-color: rgba(123, 43, 44, 0.5);
+}
+
+#spyglass {
+  -webkit-transform: rotate(25deg);
+  -moz-transform: rotate(25deg);
+  -ms-transform: rotate(25deg);
+  -o-transform: rotate(25deg);
+  transform: rotate(25deg);
+  img {
+    width: 2000px;
+    height: auto;
+  }
+}

@@ -1,0 +1,26 @@
+extends ../template/layout
+
+block content
+  - var numbers = [0,1,2,3,4,5,6,7,8,9];
+  #spyglass
+    img(src="images/spyglass.png", alt="")
+  .row#titlerow
+    .small-12.columns
+      h1.subheader Multiplayer, Socket.io Game
+  .row#fieldrow
+    .small-2.columns
+      input#player(type='text', name='name', placeholder='Game')
+    .small-2.columns
+      input#player(type='text', name='player', placeholder='Player')
+    .small-2.columns
+      input#color(type='text', name='color', placeholder='Color')
+    .small-2.columns
+      button.button.small.radius.expand#start Start
+    .small-2.columns
+  #battleground.hidden
+    table#grid
+      tbody
+        each y in numbers
+          tr
+            each x in numbers
+              td.square(data-x=x, data-y=y)

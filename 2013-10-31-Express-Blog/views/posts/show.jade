@@ -1,0 +1,37 @@
+extends ../template/layout
+
+block content
+  #top
+    .row
+      .small-1.columns
+        h1.subheader Posts
+      #navbar
+        .small-1.columns
+          a.button.radius.small.expand(href="/") Home
+        //- .small-1.columns
+        //-   a.button.radius.small.expand(href="/posts") Posts
+        .small-1.columns
+          a.button.radius.small.expand(href="/posts") Posts
+        .small-10.columns
+    .row
+      #postsline
+  .row
+    .small-12.columns
+      #posts
+        .post
+          table
+            thead
+              tr
+                th Title
+                th Author
+                th Date
+                th Tags
+            tbody
+              tr
+                td= post.title
+                td= post.author
+                td= post.date
+                td= post.tags
+          .content
+            img(src=post.image)
+            p.content= post.content

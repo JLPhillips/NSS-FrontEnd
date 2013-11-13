@@ -1,10 +1,15 @@
 extends ../template/layout
+include ../mixins/form-helper
 
 block content
   .row
-    .small-1.columns
+    .small-2.columns
       h1.subheader Home
     #navbar
-      .small-1.columns
+      .small-2.columns
         a.button.radius.small.expand(href="/posts") Posts
-      .small-10.columns
+      .small-8.columns
+  .row
+    #homeline
+  .row
+    img(src="http://missystevenswrites.com/wp-content/uploads/2011/05/welcome_mat.png", alt="")

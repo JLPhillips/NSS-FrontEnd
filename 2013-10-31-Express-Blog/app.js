@@ -1,3 +1,6 @@
+// model definitions
+require('./models/post');
+
 // express application
 var home = require('./routes/home');
 var posts = require("./routes/posts");
@@ -7,7 +10,9 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var less = require('express-less');
+var mongoose = require('mongoose');
 var app = express();
+mongoose.connect('mongodb://localhost/blogger');
 
 // all environments
 app.set('port', process.env.PORT || 1212);

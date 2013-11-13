@@ -1,14 +1,55 @@
 extends ../template/layout
 
 block content
+  #top
+    .row
+      .small-2.columns
+        h1.subheader Posts
+      #navbar
+        .small-2.columns
+          a.button.radius.small.expand(href="/") Home
+        //- .small-1.columns
+        //-   a.button.radius.small.expand(href="/posts") Posts
+        .small-2.columns
+          a.button.radius.small.expand(href="/posts/new") New
+        .small-6.columns
+    .row
+      #postsline
   .row
-    .small-1.columns
-      h1.subheader Posts
-    #navbar
-      .small-1.columns
-        a.button.radius.small.expand(href="/") Home
-      .small-1.columns
-        a.button.radius.small.expand(href="/posts") Posts
-      .small-1.columns
-        a.button.radius.small.expand(href="/posts/new") New
-      .small-8.columns
+    .small-12.columns
+      #posts
+        each post in posts
+          .post
+            table
+              thead
+                tr
+                  th Title
+                  th Author
+                  th Date
+                  th Tags
+                  th Delete
+              tbody
+                tr
+                  td: a.button.tiny.radius.expand(href="/posts/#{post.id}")= post.title
+                  td= post.author
+                  td= post.date
+                  td= post.tags
+                  td
+                    form(action="/posts/#{post.id}", method="post")
+                      input(type="hidden", name="_method", value="delete")
+                      button.radius.small.expand(type="submit") Delete
+            img(src=post.image)
+            p.content= post.content
+
+
+
+
+
+
+
+            //- h1.subheader= post.title
+            //- span= post.author
+            //- span= post.date
+            //- p= post.tags
+            //- img(src=post.image)
+            //- p= post.content

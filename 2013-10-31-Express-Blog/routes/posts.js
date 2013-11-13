@@ -1,25 +1,38 @@
+var moment = require("moment");
+var mongoose = require("mongoose");
+var Post = mongoose.model("Post");
+
 // -----------------------------------------------[GET /posts]----------------->
 
 exports.index = function(req, res){
-  res.render('posts/index', {title: 'Express Blog | Home'});
+  Post.find(function(err, posts){
+    res.render('posts/index', {title: 'Blog | Home', posts: posts});
+  });
 };
 
 // -----------------------------------------------[GET /posts/new]----------------->
 
 exports.new = function(req, res){
-  res.render('posts/new', {title: 'Express Blog | New Post'});
+  var date = moment().format("MMM Do YYYY, h:mm a");
+  res.render('posts/new', {title: 'Blog | New Post', date:date});
 };
 
 // -----------------------------------------------[POST /posts]----------------->
 
 exports.create = function(req, res){
-  res.redirect("/posts");
+  // console.log("before save");
+  // console.log(req.body);
+  new Post(req.body).save(function(err, post, count){
+    // console.log("after save");
+    // console.log(post);
+    res.redirect("/posts");
+  });
 };
 
 // -----------------------------------------------[GET /posts/:id/edit]----------------->
 
 exports.edit = function(req, res){
-  res.render('posts/edit', {title: 'Express Blog | Edit Post'});
+  res.render('posts/edit', {title: 'Blog | Edit Post'});
 };
 
 // -----------------------------------------------[PUT /posts/:id]----------------->
@@ -31,13 +44,22 @@ exports.update = function(req, res){
 // -----------------------------------------------[GET /posts/:id]----------------->
 
 exports.show = function(req, res){
-  res.render('posts/show', {title: 'Express Blog | Show Post'});
+  Post.findById(req.params.id, function(err,post){
+    res.render('posts/show', {title: 'Blog | Show Post', post: post});
+  });
 };
 
 // -----------------------------------------------[DELETE /posts/:id]----------------->
 
 exports.delete = function(req, res){
-  res.redirect('/posts/index');
+  Post.findByIdAndRemove(req.params.id, function(err,post){
+    res.redirect("/posts");
+  });
+
+  // var title = req.params.title;
+  // var movies = db.read(file);
+  // movies = _.reject(movies, function(movie){return movie.TITLE === title;});
+  // db.write(file, movies);
 };
 
 
